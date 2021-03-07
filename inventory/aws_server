@@ -1,5 +1,5 @@
 [aws_serwers]
-nginx    ansible_host=#Раньше здесь был хост)
+nginx    ansible_host=#There used to be a host here :^)
 
 [aws_serwers:vars]
 ansible_user=ubuntu
