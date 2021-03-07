@@ -1,0 +1,6 @@
+[aws_serwers]
+nginx    ansible_host=#Раньше здесь был хост)
+
+[aws_serwers:vars]
+ansible_user=ubuntu
+ansible_ssh_provate_key_file=/home/olexandr/.ssh/id_rsaory.txt all
