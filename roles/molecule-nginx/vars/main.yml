@@ -3,4 +3,4 @@ nginx:
   path: "/var/www/test.com"
   site_path: "/var/www/test.com/html"
   user: "www-data"
-  dns: "ec2-18-157-77-162.eu-central-1.compute.amazonaws.com"
+  dns: #DNS name
