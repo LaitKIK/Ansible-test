@@ -1,0 +1,38 @@
+---
+- name: Add APT repository
+  apt_repository:
+    repo: "{{ nginx.version }}"
+    update_cache: yes
+
+
+- name: apt install nginx
+  apt:
+    name: "nginx"
+    update_cache: yes
+
+
+
+- name: dir nginx domain
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: "{{ nginx.user }}"
+    group: "{{ nginx.user }}"
+    mode: '0744'
+  with_items:
+      - "{{ nginx.path }}"
+      - "{{ nginx.site_path }}"
+
+- name: rm standart dir nginx
+  file:
+    path: /var/www/htmlar/www/test.com/html"
+    state: absent
+
+- name: move index.html to /var/www/test.com/html
+  copy: 
+    src: index.html
+    dest: "{{ nginx.site_path }}/index.html"
+    mode: '0744'
+    owner: "{{ nginx.user }}"
+    group: "{{ nginx.user }}"
+    

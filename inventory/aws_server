@@ -1,6 +1,6 @@
-[aws_serwers]
-nginx    ansible_host=#Раньше здесь был хост)
+[aws_servers]
+nginx    ansible_host=18.157.77.162
 
-[aws_serwers:vars]
+[aws_servers:vars]
 ansible_user=ubuntu
 ansible_ssh_provate_key_file=/home/olexandr/.ssh/id_rsaory.txt all
