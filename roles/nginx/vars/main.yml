@@ -3,4 +3,4 @@ nginx:
   path: "/var/www/test.com"
   site_path: "/var/www/test.com/html"
   user: "www-data"
-  dns: #тут указывается DNS запись нашего хоста 
+  dns: #DNS host name 

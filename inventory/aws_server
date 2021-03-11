@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 [aws_servers]
 nginx    ansible_host=18.157.77.162
+=======
+[aws_serwers]
+nginx    ansible_host=#There used to be a host here :^)
+>>>>>>> bf985efbbc1010d67112a5f17baa317c597b201e
 
 [aws_servers:vars]
 ansible_user=ubuntu
