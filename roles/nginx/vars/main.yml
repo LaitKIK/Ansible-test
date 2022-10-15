@@ -1,6 +1,0 @@
-nginx: 
-  version: "ppa:nginx/stable"
-  path: "/var/www/test.com"
-  site_path: "/var/www/test.com/html"
-  user: "www-data"
-  dns: #DNS host name 
